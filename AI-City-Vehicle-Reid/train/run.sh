@@ -1,0 +1,1 @@
+python3 tools/train.py --config_file='configs/softmax_triplet.yml' MODEL.DEVICE_ID "('0,1,2,3')" MODEL.PRETRAIN_PATH "('PRETRAIN_PATH')" MODEL.NAME "('resnet50')" INPUT.SIZE_TRAIN "([256, 256])" INPUT.SIZE_TEST "([256, 256])" DATASETS.NAMES "('AIC')" OUTPUT_DIR "('output/')" SOLVER.IMS_PER_BATCH "(256)"
