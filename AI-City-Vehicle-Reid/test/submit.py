@@ -69,8 +69,8 @@ if __name__ == '__main__':
     pool = multiprocessing.Pool(processes=32)
     print('after create multiprocessing...')
 
-    query_dir = './submit_query/'
-    test_dir = './submit_test/'
+    query_dir = './image_query/'
+    test_dir = './image_test/'
     query_img_paths = [path for path in list_pictures(query_dir)]
     test_img_paths = [path for path in list_pictures(test_dir)]
 
@@ -94,5 +94,5 @@ if __name__ == '__main__':
         cur_gf = extract_feature(model, cur_test_img)
         gf[i*batch_size:(i+1)*batch_size, :] = cur_gf
 
-    pickle.dump({'qf': qf}, open('submit_res50_qf.data', 'wb'))
-    pickle.dump({'gf': gf}, open('submit_res50_gf.data', 'wb'))
+    pickle.dump({'qf': qf}, open('qf.data', 'wb'))
+    pickle.dump({'gf': gf}, open('gf.data', 'wb'))

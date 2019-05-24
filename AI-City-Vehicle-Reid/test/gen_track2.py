@@ -21,10 +21,10 @@ def list_pictures(directory):
 
 if __name__ == '__main__':
     # get track information
-    test_dir = '/mnt/lustre/share/hezhiqun/AICity/Track2/AIC_Reid/submit_test/'
+    test_dir = '../data/track1/image_test/'
     test_img_paths = [path for path in list_pictures(test_dir)]
     print('gallery img num: ', len(test_img_paths))
-    track_file = '/mnt/lustre/share/hezhiqun/AICity/Track2/test_track.txt'    
+    track_file = 'data/test_track.txt'    
     tids = -1*np.ones(len(test_img_paths))
     with open(track_file) as f:
         lines = f.readlines()
@@ -39,32 +39,32 @@ if __name__ == '__main__':
     print('loading pickle...')
 
 
-    qf = pickle.load(open('data/submit_res101_qf_Track1_256.data', 'rb'))['qf']
-    gf = pickle.load(open('data/submit_res101_gf_Track1_256.data', 'rb'))['gf']
+    qf = pickle.load(open('data/qf1.data', 'rb'))['qf']
+    gf = pickle.load(open('data/gf1.data', 'rb'))['gf']
 
-    qf2 = pickle.load(open('data/submit_res50_qf_Track1.data', 'rb'))['qf']
-    gf2 = pickle.load(open('data/submit_res50_gf_Track1.data', 'rb'))['gf']
+    qf2 = pickle.load(open('data/qf2.data', 'rb'))['qf']
+    gf2 = pickle.load(open('data/gf2.data', 'rb'))['gf']
 
-    qf3 = pickle.load(open('data/submit_res50_qf_Track2.data', 'rb'))['qf']
-    gf3 = pickle.load(open('data/submit_res50_gf_Track2.data', 'rb'))['gf']
+    qf3 = pickle.load(open('data/qf3.data', 'rb'))['qf']
+    gf3 = pickle.load(open('data/gf3.data', 'rb'))['gf']
 
-    qf4 = pickle.load(open('data/submit_res101_qf_Track2_256.data', 'rb'))['qf']
-    gf4 = pickle.load(open('data/submit_res101_gf_Track2_256.data', 'rb'))['gf']
+    qf4 = pickle.load(open('data/qf4.data', 'rb'))['qf']
+    gf4 = pickle.load(open('data/gf4.data', 'rb'))['gf']
 
-    qf5 = pickle.load(open('data/submit_se_res101_qf_Track1.data', 'rb'))['qf']
-    gf5 = pickle.load(open('data/submit_se_res101_gf_Track1.data', 'rb'))['gf']
+    qf5 = pickle.load(open('data/qf5.data', 'rb'))['qf']
+    gf5 = pickle.load(open('data/gf5.data', 'rb'))['gf']
 
-    qf6 = pickle.load(open('data/submit_res50_qf_Track1_guangzhou.data', 'rb'))['qf']
-    gf6 = pickle.load(open('data/submit_res50_gf_Track1_guangzhou.data', 'rb'))['gf']
+    qf6 = pickle.load(open('data/qf6.data', 'rb'))['qf']
+    gf6 = pickle.load(open('data/gf6.data', 'rb'))['gf']
 
-    qf7 = pickle.load(open('data/submit_res50_qf_Track1_shenzhen.data', 'rb'))['qf']
-    gf7 = pickle.load(open('data/submit_res50_gf_Track1_shenzhen.data', 'rb'))['gf']
+    qf7 = pickle.load(open('data/qf7.data', 'rb'))['qf']
+    gf7 = pickle.load(open('data/gf7.data', 'rb'))['gf']
 
-    qf8 = pickle.load(open('data/submit_res101_qf_Track2_new.data', 'rb'))['qf']
-    gf8 = pickle.load(open('data/submit_res101_gf_Track2_new.data', 'rb'))['gf']
+    qf8 = pickle.load(open('data/qf8.data', 'rb'))['qf']
+    gf8 = pickle.load(open('data/gf8.data', 'rb'))['gf']
 
-    qf9 = pickle.load(open('data/submit_res50_qf_Track2_new.data', 'rb'))['qf']
-    gf9 = pickle.load(open('data/submit_res50_gf_Track2_new.data', 'rb'))['gf']
+    qf9 = pickle.load(open('data/qf9.data', 'rb'))['qf']
+    gf9 = pickle.load(open('data/gf9.data', 'rb'))['gf']
 
     qf = preprocessing.normalize(qf, norm='l2')
     gf = preprocessing.normalize(gf, norm='l2')

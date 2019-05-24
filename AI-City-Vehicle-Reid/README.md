@@ -1,11 +1,13 @@
 ## Get Started
 
-#### 1. put the track1 folder into 'data/'
+#### 1. put the track2 folder into 'data/'
 
 ```
-cd data   
-mkdir track1  
-cp -r path/to/track1/test/ track1/
+cd data     
+cp -r path/to/track2/image_test/ .
+cp -r path/to/track2/image_query/ .
+cd ../test/data
+cp -r path/to/track2/test_track.txt .
 ```
 
 #### 2. training models
@@ -15,7 +17,7 @@ cd train
 sh run.sh
 ```
 
-#### 3. tset
+#### 3. test
 ```
 cd test
 sh run.sh

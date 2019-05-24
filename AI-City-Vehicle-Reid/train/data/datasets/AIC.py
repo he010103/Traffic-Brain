@@ -30,9 +30,9 @@ class AIC(BaseImageDataset):
         self.dataset_dir = osp.join(root, self.dataset_dir)
         
 
-        self.train_dir = osp.join(self.dataset_dir, 'Track2_train_Track1_test')
-        self.query_dir = osp.join(self.dataset_dir, 'hezhiqun_query')
-        self.gallery_dir = osp.join(self.dataset_dir, 'hezhiqun_test')
+        self.train_dir = osp.join(self.dataset_dir, 'train')
+        self.query_dir = osp.join(self.dataset_dir, 'query')
+        self.gallery_dir = osp.join(self.dataset_dir, 'test')
 
         self._check_before_run()
 
