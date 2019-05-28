@@ -1,11 +1,13 @@
 ## Get Started
 
 #### 1. put the track1 folder into 'data/'
+download the data in google drive [data](https://drive.google.com/file/d/1jorp-cj-yDth47D2cRW0FvDpc0SjdVgy/view?usp=sharing) and unzip it, then put all the folder in the zip in the current foloder 
 
 ```
 mkdir data   
 cd data
-download the data in google drive [data](https://drive.google.com/drive/folders/1MFlPn5CvLjYhYkQowW5QT6o6AJaO-QD3?usp=sharing) and unzip it, then put all the folder in the zip in the current foloder 
+
+cp -r path/to/track1/test/ track1/
 ```
 
 #### 2. filter the invalid rectangle of MSTC
