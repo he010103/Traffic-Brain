@@ -1,5 +1,5 @@
 # Multi-Camera Vehicle Tracking with Powerful Visual Features and Spatial-Temporal Cue
-(PDF Download)[http://openaccess.thecvf.com/content_CVPRW_2019/papers/AI%20City/He_Multi-Camera_Vehicle_Tracking_with_Powerful_Visual_Features_and_Spatial-Temporal_Cue_CVPRW_2019_paper.pdf]
+[PDF Download](http://openaccess.thecvf.com/content_CVPRW_2019/papers/AI%20City/He_Multi-Camera_Vehicle_Tracking_with_Powerful_Visual_Features_and_Spatial-Temporal_Cue_CVPRW_2019_paper.pdf)
 This repository contains our source code of Track1 and Track2 in the NVIDIA AI City Challenge at CVPR 2019 Workshop.
 
 ## Authors
